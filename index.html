@@ -3,51 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi portafolio</title>
+  <title>Carlos García — Fullstack Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#inicio">Carlos García</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="#resumen">Resumen</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <main>
-    <section id="inicio">
-      <h1>Hola, soy [Tu nombre]</h1>
-      <p>Desarrollador / Diseñador / Lo que hagas</p>
-    </section>
-
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>Aquí escribe una breve descripción sobre ti, tu experiencia y qué te apasiona.</p>
-    </section>
-
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-      <div class="proyectos-grid">
-        <!-- Añade tus proyectos aquí. Ejemplo: -->
-        <article class="tarjeta-proyecto">
-          <h3>Nombre del proyecto</h3>
-          <p>Descripción breve.</p>
-          <a href="#" target="_blank" rel="noopener">Ver proyecto</a>
-        </article>
+  <main class="container py-5">
+    <section id="inicio" class="py-5 mt-4">
+      <h1 class="display-5 fw-bold mb-2">Carlos Adolfo García Ramos</h1>
+      <p class="lead text-secondary mb-4">Fullstack Developer</p>
+      <div class="d-flex flex-wrap gap-3 text-muted small">
+        <span><a href="tel:8180511039" class="text-decoration-none text-muted">818 051 1039</a></span>
+        <span><a href="mailto:carlos.garcia.ra@outlook.com" class="text-decoration-none text-muted">carlos.garcia.ra@outlook.com</a></span>
+        <span>Monterrey, N.L.</span>
       </div>
     </section>
 
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Email, LinkedIn, GitHub, etc.</p>
+    <section id="resumen" class="py-4">
+      <h2 class="h5 fw-bold text-uppercase section-title mb-3">Resumen</h2>
+      <hr class="opacity-25 mb-3">
+      <p class="text-secondary mb-0">
+        Desarrollador Fullstack con más de cinco años de experiencia en JavaScript, TypeScript y ecosistemas web y móvil. Experiencia en frontend (Vue.js, React, React Native), backend (NestJS, .NET, Google Cloud Functions) e integración de APIs. Disfruto aprender tecnologías nuevas por mi cuenta y me emociona enfrentar retos técnicos.
+      </p>
+    </section>
+
+    <section id="formacion" class="py-4">
+      <h2 class="h5 fw-bold text-uppercase section-title mb-3">Formación</h2>
+      <hr class="opacity-25 mb-3">
+      <div class="mb-4">
+        <h3 class="h6 fw-semibold mb-1">Ingeniería en Mecatrónica</h3>
+        <p class="text-secondary small mb-1">Facultad de Ingeniería Mecánica y Eléctrica UANL</p>
+        <span class="small text-muted">08/2015 — 06/2021</span>
+      </div>
+      <div>
+        <h3 class="h6 fw-semibold mb-1">Diplomado de Inglés Académico</h3>
+        <p class="text-secondary small mb-1">Centro de Idiomas, Facultad de Filosofía y Letras UANL</p>
+        <span class="small text-muted">08/2014 — 12/2017</span>
+      </div>
+    </section>
+
+    <section id="experiencia" class="py-4">
+      <h2 class="h5 fw-bold text-uppercase section-title mb-3">Experiencia</h2>
+      <hr class="opacity-25 mb-3">
+
+      <article class="mb-4">
+        <div class="d-flex flex-wrap align-items-baseline gap-2 mb-1">
+          <span class="fw-semibold">Monoestereo</span>
+          <span class="text-muted">—</span>
+          <span>Desarrollador Frontend</span>
+        </div>
+        <p class="small text-muted mb-2">10/2020 — 07/2023 · Remoto</p>
+        <p class="small text-secondary mb-0">
+          Agencia de desarrollo. Desarrollo FrontEnd en múltiples proyectos con Node, principalmente Vue.js y React. Consumo de REST APIs, deploys a servidor y apoyo en backend.
+        </p>
+      </article>
+
+      <article class="mb-4">
+        <div class="d-flex flex-wrap align-items-baseline gap-2 mb-1">
+          <span class="fw-semibold">Ana GPT</span>
+          <span class="text-muted">—</span>
+          <span>Desarrollador Fullstack</span>
+        </div>
+        <p class="small text-muted mb-2">08/2023 — 02/2024 · Remoto</p>
+        <p class="small text-secondary mb-0">
+          Desarrollo Fullstack: frontend con Vue.js (interfaz e integración con API de GPT) y backend serverless con Google Cloud Functions en TypeScript (Firebase, Firestore, Storage). Responsable del ciclo completo de la aplicación.
+        </p>
+      </article>
+
+      <article class="mb-4">
+        <div class="d-flex flex-wrap align-items-baseline gap-2 mb-1">
+          <span class="fw-semibold">Daltum Systems</span>
+          <span class="text-muted">—</span>
+          <span>Desarrollador Fullstack</span>
+        </div>
+        <p class="small text-muted mb-2">02/2024 — 01/2026 · Remoto</p>
+        <p class="small text-secondary mb-0">
+          Desarrollo Fullstack en Node.js y .NET. Integración y desarrollo de APIs REST (guías de envío, plataforma de RRHH, evaluación de empleados, datos catastrales). Azure, CI/CD. Administración de servidores Linux: despliegue, diagnóstico, configuración e infraestructura.
+        </p>
+      </article>
+
+      <article>
+        <div class="d-flex flex-wrap align-items-baseline gap-2 mb-1">
+          <span class="fw-semibold">Bluepeople (Dolfintech)</span>
+          <span class="text-muted">—</span>
+          <span>Desarrollador Fullstack</span>
+        </div>
+        <p class="small text-muted mb-2">02/2026 — Actualidad · Remoto</p>
+        <p class="small text-secondary mb-0">
+          Desarrollo Fullstack del módulo de Wallet: integración con APIs de Green Dot, frontend web (React.js) y app móvil (React Native), backend con NestJS y .NET 9. Bases de datos SQL y MongoDB. Diseño, implementación y mantenimiento de flujos de la wallet.
+        </p>
+      </article>
+    </section>
+
+    <section id="habilidades" class="py-4">
+      <h2 class="h5 fw-bold text-uppercase section-title mb-3">Frameworks y habilidades</h2>
+      <hr class="opacity-25 mb-3">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <h3 class="h6 fw-semibold mb-2">Frontend</h3>
+          <p class="small text-secondary mb-0">Vue.js, React (JavaScript), React Native (iOS y Android). Interfaces dinámicas y aplicaciones móviles.</p>
+        </div>
+        <div class="col-md-6">
+          <h3 class="h6 fw-semibold mb-2">Backend</h3>
+          <p class="small text-secondary mb-0">Nest.js (TypeScript), FastAPI (Python), ASP.NET Core / .NET (C#). Google Cloud Functions (TypeScript). APIs RESTful y serverless.</p>
+        </div>
+        <div class="col-md-6">
+          <h3 class="h6 fw-semibold mb-2">Bases de datos</h3>
+          <p class="small text-secondary mb-0">PostgreSQL, Firestore, MongoDB. Diseño relacional y NoSQL, esquemas flexibles.</p>
+        </div>
+        <div class="col-md-6">
+          <h3 class="h6 fw-semibold mb-2">Entornos y DevOps</h3>
+          <p class="small text-secondary mb-0">Docker Compose, CI/CD. Azure y Google Cloud Platform. Servidores Linux.</p>
+        </div>
+        <div class="col-12">
+          <h3 class="h6 fw-semibold mb-2">Herramientas de IA</h3>
+          <p class="small text-secondary mb-0">Uso de Cursor, Gemini y herramientas de IA generativa para productividad en desarrollo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="py-4 pb-5">
+      <h2 class="h5 fw-bold text-uppercase section-title mb-3">Contacto</h2>
+      <hr class="opacity-25 mb-3">
+      <ul class="list-unstyled mb-0">
+        <li class="mb-2"><a href="tel:8180511039" class="text-decoration-none text-secondary">818 051 1039</a></li>
+        <li class="mb-2"><a href="mailto:carlos.garcia.ra@outlook.com" class="text-decoration-none text-secondary">carlos.garcia.ra@outlook.com</a></li>
+        <li class="text-secondary">Monterrey, N.L.</li>
+      </ul>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="año"></span> — Hecho con cariño</p>
+  <footer class="bg-white border-top py-3">
+    <div class="container text-center text-muted small">
+      <p class="mb-0">© <span id="año"></span> Carlos García</p>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
 </html>

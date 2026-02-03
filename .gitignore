@@ -1,0 +1,12 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+.idea/
+.vscode/
+*.swp
+*~
+
+# Opcional si más adelante usas herramientas de build
+node_modules/

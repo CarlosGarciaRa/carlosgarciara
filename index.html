@@ -34,10 +34,10 @@
     <section id="inicio" class="container container--barra text-center pt-5 pt-md-5 pb-5 mt-4">
       <!-- Placeholder: sustituir por tu foto. Recomendado: retrato, relación 4:5 o 1:1, mínimo 400px de ancho. -->
       <img src="assets/avatar.png" alt="Carlos García" class="bloque__avatar mx-auto mb-4 d-block">
-      <h1 class="bloque__titulo-principal mb-2">Hola, soy Carlos</h1>
-      <p class="bloque__subtitulo mb-3">Fullstack Developer</p>
+      <h1 class="bloque__titulo-principal display-5 fw-bold mb-2">Hola, soy Carlos</h1>
+      <p class="bloque__subtitulo fs-4 mb-3">Fullstack Developer</p>
       <p class="bloque__intro mb-4">
-        Desarrollador con más de cinco años de experiencia en JavaScript, TypeScript y ecosistemas web y móvil. Me gusta aprender tecnologías nuevas y resolver retos técnicos de punta a punta.
+        Más de cinco años como desarrollador fullstack: experiencia sólida en backend (APIs, servicios, bases de datos) y en frontend (interfaces web y móvil). Me gusta abordar el ciclo completo y resolver problemas de extremo a extremo.
       </p>
       <div class="d-flex flex-wrap gap-2 justify-content-center">
         <a href="#contacto" class="btn btn-primary">Contacto</a>
@@ -52,7 +52,7 @@
 
     <!-- Bloque: servicios -->
     <section id="servicios" class="container container--barra py-5">
-      <h2 class="bloque__titulo-seccion mb-4">Servicios</h2>
+      <h2 class="bloque__titulo-seccion fs-2 fw-bold mb-4">Servicios</h2>
       <ul class="lista-oferta mb-0">
         <li>Desarrollo frontend (Vue.js, React, React Native)</li>
         <li>Desarrollo backend (NestJS, .NET, Google Cloud Functions)</li>
@@ -64,13 +64,13 @@
 
     <!-- Bloque: stack técnico (una card por columna) -->
     <section id="tecnologias" class="container container--barra py-5">
-      <h2 class="bloque__titulo-seccion mb-4">Stack técnico</h2>
+      <h2 class="bloque__titulo-seccion fs-2 fw-bold mb-4">Stack técnico</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="stack-card stack-card--con-esquina card border-0 h-100 p-4 position-relative">
             <i class="devicon-react-original stack-card__icono-esquina" aria-hidden="true"></i>
-            <h3 class="stack-item__titulo mb-3">Frontend</h3>
-            <ul class="stack-lista list-unstyled mb-0">
+            <h3 class="stack-item__titulo fs-5 fw-semibold mb-3">Frontend</h3>
+            <ul class="stack-lista list-unstyled mb-0 small">
               <li class="stack-lista__item"><i class="devicon-vuejs-plain stack-icon" aria-hidden="true"></i> Vue.js</li>
               <li class="stack-lista__item"><i class="devicon-react-original stack-icon" aria-hidden="true"></i> React</li>
               <li class="stack-lista__item"><i class="devicon-react-original stack-icon" aria-hidden="true"></i> React Native</li>
@@ -82,8 +82,8 @@
         <div class="col-md-4">
           <div class="stack-card stack-card--con-esquina card border-0 h-100 p-4 position-relative">
             <i class="devicon-nestjs-plain stack-card__icono-esquina" aria-hidden="true"></i>
-            <h3 class="stack-item__titulo mb-3">Backend</h3>
-            <ul class="stack-lista list-unstyled mb-0">
+            <h3 class="stack-item__titulo fs-5 fw-semibold mb-3">Backend</h3>
+            <ul class="stack-lista list-unstyled mb-0 small">
               <li class="stack-lista__item"><i class="devicon-nestjs-plain stack-icon" aria-hidden="true"></i> NestJS</li>
               <li class="stack-lista__item"><i class="devicon-dotnetcore-plain stack-icon" aria-hidden="true"></i> .NET</li>
               <li class="stack-lista__item"><i class="devicon-fastapi-plain stack-icon" aria-hidden="true"></i> FastAPI</li>
@@ -94,8 +94,8 @@
         <div class="col-md-4">
           <div class="stack-card stack-card--con-esquina card border-0 h-100 p-4 position-relative">
             <i class="devicon-docker-plain stack-card__icono-esquina" aria-hidden="true"></i>
-            <h3 class="stack-item__titulo mb-3">Datos y DevOps</h3>
-            <ul class="stack-lista list-unstyled mb-0">
+            <h3 class="stack-item__titulo fs-5 fw-semibold mb-3">Datos y DevOps</h3>
+            <ul class="stack-lista list-unstyled mb-0 small">
               <li class="stack-lista__item"><i class="devicon-postgresql-plain stack-icon" aria-hidden="true"></i> PostgreSQL</li>
               <li class="stack-lista__item"><i class="devicon-mongodb-plain stack-icon" aria-hidden="true"></i> MongoDB</li>
               <li class="stack-lista__item"><i class="devicon-googlecloud-plain stack-icon" aria-hidden="true"></i> Firestore</li>
@@ -110,7 +110,7 @@
 
     <!-- Bloque: trayectoria + CTA -->
     <section class="container container--barra py-5">
-      <h2 class="bloque__titulo-seccion mb-4 text-start">Trayectoria</h2>
+      <h2 class="bloque__titulo-seccion fs-2 fw-bold mb-4 text-start">Trayectoria</h2>
       <div class="text-center">
         <p class="bloque__texto mb-4">
           He trabajado en consultorías, startups y empresas de producto: desde frontend en Monoestereo y Ana GPT hasta fullstack en Daltum Systems y Bluepeople (módulo Wallet con React, React Native, NestJS y .NET).
@@ -119,16 +119,33 @@
       </div>
     </section>
 
-    <!-- Bloque: contacto -->
+    <!-- Bloque: contacto (card 60% + 40%) -->
     <section id="contacto" class="container container--barra py-5 pb-5">
-      <h2 class="bloque__titulo-seccion mb-4 text-start">Contacto</h2>
-      <div class="text-center">
-        <p class="bloque__texto mb-4">Si tienes un proyecto en mente o quieres conectar, escríbeme.</p>
-        <ul class="lista-contacto list-unstyled mb-0">
-          <li class="mb-2"><a href="mailto:carlos.garcia.ra@outlook.com">carlos.garcia.ra@outlook.com</a></li>
-          <li class="mb-2"><a href="tel:8180511039">818 051 1039</a></li>
-          <li>Monterrey, N.L.</li>
-        </ul>
+      <h2 class="bloque__titulo-seccion fs-2 fw-bold mb-4 text-start">Contacto</h2>
+      <div class="contacto-card card border-0 p-4 p-md-5">
+        <div class="row g-4 g-lg-5 align-items-start">
+          <div class="col-lg-7 contacto-card__izq">
+            <p class="contacto-card__texto fs-3 fw-bold mb-0">Disponible para contratación en empresa y para colaboración por proyecto. Si encaja con lo que buscas, escríbeme por el formulario de la derecha o al correo que aparece abajo.</p>
+          </div>
+          <div class="col-lg-5">
+            <form class="formulario-contacto" action="#" method="post">
+              <div class="mb-3">
+                <label for="contacto-nombre" class="form-label formulario-contacto__label">Nombre</label>
+                <input type="text" class="form-control formulario-contacto__input" id="contacto-nombre" name="nombre" required autocomplete="name">
+              </div>
+              <div class="mb-3">
+                <label for="contacto-email" class="form-label formulario-contacto__label">Email</label>
+                <input type="email" class="form-control formulario-contacto__input" id="contacto-email" name="email" required autocomplete="email">
+              </div>
+              <div class="mb-4">
+                <label for="contacto-mensaje" class="form-label formulario-contacto__label">Mensaje</label>
+                <textarea class="form-control formulario-contacto__input formulario-contacto__textarea" id="contacto-mensaje" name="mensaje" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <p class="formulario-contacto__ayuda mt-4 mb-0 small opacity-75">Directo: <a href="mailto:carlos.garcia.ra@outlook.com" class="formulario-contacto__link">carlos.garcia.ra@outlook.com</a></p>
+          </div>
+        </div>
       </div>
     </section>
   </div>

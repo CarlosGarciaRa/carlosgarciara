@@ -82,11 +82,9 @@ html {
 .bloque__avatar {
   width: 160px;
   height: 200px;
-  background: var(--deep-navy);
   border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
+  display: block;
 }
 
 .bloque__avatar-texto {

@@ -1,14 +1,248 @@
-/* Ajuste de scroll con navbar fija */
-html { scroll-padding-top: 4rem; }
-
-/* Títulos de sección: jerarquía visual */
-.section-title {
-  letter-spacing: 0.05em;
-  color: #212529;
+/* ===== Paleta de colores ===== */
+:root {
+  --prussian-blue: #0a1128;
+  --deep-navy: #001f54;
+  --yale-blue: #034078;
+  --cerulean: #1282a2;
+  --white: #fefcfb;
+  --font-sans: "Epilogue", sans-serif;
 }
 
-/* Enlaces de contacto en hover */
-#contacto a:hover,
-#inicio a:hover {
-  color: #0d6efd !important;
+/* ===== Tipografía: software / producto ===== */
+body {
+  font-family: var(--font-sans);
+}
+
+/* ===== Base: scroll con navbar fija ===== */
+html {
+  scroll-padding-top: 4.5rem;
+}
+
+/* ===== Contenedor estrecho (solo ancho máximo; márgenes con Bootstrap) ===== */
+.container--narrow {
+  max-width: 720px;
+}
+
+/* ===== Barra superior: 80% del ancho, sin borde ===== */
+.container--barra {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Tema: paleta aplicada + gradiente de fondo ===== */
+.tema-oscuro {
+  background: linear-gradient(165deg, var(--prussian-blue) 0%, var(--deep-navy) 35%, var(--yale-blue) 70%, var(--prussian-blue) 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.tema-oscuro .navbar {
+  background: linear-gradient(180deg, var(--prussian-blue) 0%, var(--deep-navy) 100%) !important;
+}
+
+.pie-sitio {
+  background: linear-gradient(180deg, var(--prussian-blue) 0%, var(--deep-navy) 100%);
+}
+
+.pie-sitio__texto {
+  color: var(--white);
+  opacity: 0.85;
+}
+
+/* Títulos y texto */
+.bloque__titulo-seccion {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+
+.bloque__titulo-principal {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: var(--white);
+}
+
+.bloque__subtitulo {
+  font-size: 1.25rem;
+  color: var(--white);
+  opacity: 0.85;
+}
+
+.bloque__intro,
+.bloque__frase,
+.bloque__texto {
+  color: var(--white);
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* ===== Placeholder avatar ===== */
+.bloque__avatar {
+  width: 160px;
+  height: 200px;
+  background: var(--deep-navy);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bloque__avatar-texto {
+  font-size: 0.85rem;
+  color: var(--white);
+  opacity: 0.6;
+}
+
+/* ===== Lista oferta (Servicios): bullet de acento ===== */
+.lista-oferta {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-oferta li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+  opacity: 0.9;
+}
+
+.lista-oferta li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cerulean);
+}
+
+/* ===== Stack: una card por columna ===== */
+.stack-card {
+  background-color: var(--deep-navy);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.stack-card--con-esquina {
+  overflow: visible;
+}
+
+/* Icono en esquina (alternativa: un icono grande por card, empalmado) */
+.stack-card__icono-esquina {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  font-size: 3.5rem;
+  color: var(--cerulean);
+  opacity: 0.35;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.stack-item__titulo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.stack-lista {
+  padding-left: 0;
+}
+
+.stack-lista__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+  opacity: 0.9;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.stack-lista__item::before {
+  content: "";
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--cerulean);
+  margin-right: 0.25rem;
+}
+
+/* Iconos Devicon: no sobrescribir font-family para que se vean */
+.stack-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  color: var(--cerulean);
+  display: inline-block;
+  min-width: 1.5em;
+  text-align: center;
+}
+
+.stack-icon--placeholder {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: var(--yale-blue);
+  border-radius: 4px;
+}
+
+/* ===== Contacto: enlaces ===== */
+.lista-contacto a {
+  color: var(--white);
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.lista-contacto a:hover {
+  color: var(--cerulean);
+  opacity: 1;
+}
+
+.lista-contacto li:not(:has(a)) {
+  color: var(--white);
+  opacity: 0.85;
+}
+
+/* ===== Botones: acento cerulean ===== */
+.tema-oscuro .btn-primary {
+  background-color: var(--cerulean);
+  border-color: var(--cerulean);
+}
+
+.tema-oscuro .btn-primary:hover {
+  background-color: var(--yale-blue);
+  border-color: var(--yale-blue);
+}
+
+.tema-oscuro .btn-outline-primary {
+  color: var(--cerulean);
+  border-color: var(--cerulean);
+}
+
+.tema-oscuro .btn-outline-primary:hover {
+  background-color: var(--cerulean);
+  color: var(--white);
+  border-color: var(--cerulean);
+}
+
+.tema-oscuro .btn-outline-light {
+  color: var(--white);
+  border-color: rgba(254, 252, 251, 0.5);
+}
+
+.tema-oscuro .btn-outline-light:hover {
+  background-color: var(--white);
+  color: var(--prussian-blue);
+  border-color: var(--white);
+}
+
+/* ===== Footer borde ===== */
+.pie-sitio.border-top {
+  border-color: var(--yale-blue) !important;
 }

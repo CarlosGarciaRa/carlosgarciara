@@ -1,6 +1,6 @@
 (function () {
   var STORAGE_THEME = "portfolio-theme";
-  var DEFAULT_THEME = "navy";
+  var DEFAULT_THEME = "violeta";
 
   // Año en el footer
   var añoEl = document.getElementById("año");

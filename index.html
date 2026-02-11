@@ -21,9 +21,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navPrincipal">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html#inicio">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#inicio" data-i18n="nav.inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="experiencia.html" data-i18n="nav.experiencia">Experiencia</a></li>
           </ul>
+          <select class="form-select form-select-sm lang-selector ms-3" style="width: auto; max-width: 100px;" aria-label="Idioma">
+            <option value="es">🇲🇽 ES</option>
+            <option value="en">🇺🇸 EN</option>
+          </select>
         </div>
       </div>
     </nav>
@@ -34,42 +39,42 @@
     <section id="inicio" class="container container--barra text-center pt-5 pt-md-5 pb-5 mt-4">
       <!-- Placeholder: sustituir por tu foto. Recomendado: retrato, relación 4:5 o 1:1, mínimo 400px de ancho. -->
       <img src="assets/avatar.png" alt="Carlos García" class="bloque__avatar mx-auto mb-4 d-block">
-      <h1 class="bloque__titulo-principal display-5 fw-bold mb-2">Hola, soy Carlos</h1>
-      <p class="bloque__subtitulo fs-4 mb-3">Fullstack Developer</p>
-      <p class="bloque__intro mb-4">
+      <h1 class="bloque__titulo-principal display-5 fw-bold mb-2" data-i18n="hero.saludo">Hola, soy Carlos</h1>
+      <p class="bloque__subtitulo fs-4 mb-3" data-i18n="hero.subtitulo">Fullstack Developer</p>
+      <p class="bloque__intro mb-4" data-i18n="hero.intro">
         Más de cinco años como desarrollador fullstack: experiencia sólida en backend (APIs, servicios, bases de datos) y en frontend (interfaces web y móvil). Me gusta abordar el ciclo completo y resolver problemas de extremo a extremo.
       </p>
       <div class="d-flex flex-wrap gap-2 justify-content-center">
-        <a href="#contacto" class="btn btn-primary">Contacto</a>
-        <a href="proyectos.html" class="btn btn-outline-light">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-primary" data-i18n="hero.btnContacto">Contacto</a>
+        <a href="proyectos.html" class="btn btn-outline-light" data-i18n="hero.btnProyectos">Ver proyectos</a>
       </div>
     </section>
 
     <!-- Bloque: valor en una línea -->
     <section class="container container--barra text-center py-4">
-      <p class="bloque__frase mb-0">Construyo interfaces y aplicaciones que escalan, desde frontend hasta backend e infraestructura.</p>
+      <p class="bloque__frase mb-0" data-i18n="tagline.texto">Construyo interfaces y aplicaciones que escalan, desde frontend hasta backend e infraestructura.</p>
     </section>
 
     <!-- Bloque: servicios -->
     <section id="servicios" class="container container--barra py-5">
-      <h2 class="bloque__titulo-seccion fs-2 fw-bold mb-4">Servicios</h2>
-      <ul class="lista-oferta mb-0">
-        <li>Desarrollo frontend (Vue.js, React, React Native)</li>
-        <li>Desarrollo backend (NestJS, .NET, Google Cloud Functions)</li>
-        <li>Diseño e integración de APIs REST</li>
-        <li>Aplicaciones móviles (iOS y Android)</li>
-        <li>Bases de datos (PostgreSQL, MongoDB, Firestore)</li>
+      <h2 class="bloque__titulo-seccion fs-2 fw-bold mb-4" data-i18n="servicios.titulo">Servicios</h2>
+      <ul class="lista-oferta mb-0" data-i18n-array="servicios.items">
+        <li><span data-i18n-text>Desarrollo frontend (Vue.js, React, React Native)</span></li>
+        <li><span data-i18n-text>Desarrollo backend (NestJS, .NET, Google Cloud Functions)</span></li>
+        <li><span data-i18n-text>Diseño e integración de APIs REST</span></li>
+        <li><span data-i18n-text>Aplicaciones móviles (iOS y Android)</span></li>
+        <li><span data-i18n-text>Bases de datos (PostgreSQL, MongoDB, Firestore)</span></li>
       </ul>
     </section>
 
     <!-- Bloque: stack técnico (una card por columna) -->
     <section id="tecnologias" class="container container--barra py-5">
-      <h2 class="bloque__titulo-seccion fs-2 fw-bold mb-4">Stack técnico</h2>
+      <h2 class="bloque__titulo-seccion fs-2 fw-bold mb-4" data-i18n="stack.titulo">Stack técnico</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="stack-card stack-card--con-esquina card border-0 h-100 p-4 position-relative">
             <i class="devicon-react-original stack-card__icono-esquina" aria-hidden="true"></i>
-            <h3 class="stack-item__titulo fs-5 fw-semibold mb-3">Frontend</h3>
+            <h3 class="stack-item__titulo fs-5 fw-semibold mb-3" data-i18n="stack.frontend">Frontend</h3>
             <ul class="stack-lista list-unstyled mb-0 small">
               <li class="stack-lista__item"><i class="devicon-vuejs-plain stack-icon" aria-hidden="true"></i> Vue.js</li>
               <li class="stack-lista__item"><i class="devicon-react-original stack-icon" aria-hidden="true"></i> React</li>
@@ -82,7 +87,7 @@
         <div class="col-md-4">
           <div class="stack-card stack-card--con-esquina card border-0 h-100 p-4 position-relative">
             <i class="devicon-nestjs-plain stack-card__icono-esquina" aria-hidden="true"></i>
-            <h3 class="stack-item__titulo fs-5 fw-semibold mb-3">Backend</h3>
+            <h3 class="stack-item__titulo fs-5 fw-semibold mb-3" data-i18n="stack.backend">Backend</h3>
             <ul class="stack-lista list-unstyled mb-0 small">
               <li class="stack-lista__item"><i class="devicon-nestjs-plain stack-icon" aria-hidden="true"></i> NestJS</li>
               <li class="stack-lista__item"><i class="devicon-dotnetcore-plain stack-icon" aria-hidden="true"></i> .NET</li>
@@ -94,7 +99,7 @@
         <div class="col-md-4">
           <div class="stack-card stack-card--con-esquina card border-0 h-100 p-4 position-relative">
             <i class="devicon-docker-plain stack-card__icono-esquina" aria-hidden="true"></i>
-            <h3 class="stack-item__titulo fs-5 fw-semibold mb-3">Datos y DevOps</h3>
+            <h3 class="stack-item__titulo fs-5 fw-semibold mb-3" data-i18n="stack.datos">Datos y DevOps</h3>
             <ul class="stack-lista list-unstyled mb-0 small">
               <li class="stack-lista__item"><i class="devicon-postgresql-plain stack-icon" aria-hidden="true"></i> PostgreSQL</li>
               <li class="stack-lista__item"><i class="devicon-mongodb-plain stack-icon" aria-hidden="true"></i> MongoDB</li>
@@ -110,40 +115,40 @@
 
     <!-- Bloque: trayectoria + CTA -->
     <section class="container container--barra py-5">
-      <h2 class="bloque__titulo-seccion fs-2 fw-bold mb-4 text-start">Trayectoria</h2>
+      <h2 class="bloque__titulo-seccion fs-2 fw-bold mb-4 text-start" data-i18n="trayectoria.titulo">Trayectoria</h2>
       <div class="text-center">
-        <p class="bloque__texto mb-4">
+        <p class="bloque__texto mb-4" data-i18n="trayectoria.texto">
           He trabajado en consultorías, startups y empresas de producto: desde frontend en Monoestereo y Ana GPT hasta fullstack en Daltum Systems y Bluepeople (módulo Wallet con React, React Native, NestJS y .NET).
         </p>
-        <a href="proyectos.html" class="btn btn-outline-primary">Ver proyectos</a>
+        <a href="proyectos.html" class="btn btn-outline-primary" data-i18n="trayectoria.btnProyectos">Ver proyectos</a>
       </div>
     </section>
 
     <!-- Bloque: contacto (card 60% + 40%) -->
     <section id="contacto" class="container container--barra py-5 pb-5">
-      <h2 class="bloque__titulo-seccion fs-2 fw-bold mb-4 text-start">Contacto</h2>
+      <h2 class="bloque__titulo-seccion fs-2 fw-bold mb-4 text-start" data-i18n="contacto.titulo">Contacto</h2>
       <div class="contacto-card card border-0 p-4 p-md-5">
         <div class="row g-4 g-lg-5 align-items-start">
           <div class="col-lg-7 contacto-card__izq">
-            <p class="contacto-card__texto fs-3 fw-bold mb-0">Disponible para contratación en empresa y para colaboración por proyecto. Si encaja con lo que buscas, escríbeme por el formulario de la derecha o al correo que aparece abajo.</p>
+            <p class="contacto-card__texto fs-3 fw-bold mb-0" data-i18n="contacto.texto">Disponible para contratación en empresa y para colaboración por proyecto. Si encaja con lo que buscas, escríbeme por el formulario de la derecha o al correo que aparece abajo.</p>
           </div>
           <div class="col-lg-5">
             <form class="formulario-contacto" action="#" method="post">
               <div class="mb-3">
-                <label for="contacto-nombre" class="form-label formulario-contacto__label">Nombre</label>
+                <label for="contacto-nombre" class="form-label formulario-contacto__label" data-i18n="contacto.form.nombre">Nombre</label>
                 <input type="text" class="form-control formulario-contacto__input" id="contacto-nombre" name="nombre" required autocomplete="name">
               </div>
               <div class="mb-3">
-                <label for="contacto-email" class="form-label formulario-contacto__label">Email</label>
+                <label for="contacto-email" class="form-label formulario-contacto__label" data-i18n="contacto.form.email">Email</label>
                 <input type="email" class="form-control formulario-contacto__input" id="contacto-email" name="email" required autocomplete="email">
               </div>
               <div class="mb-4">
-                <label for="contacto-mensaje" class="form-label formulario-contacto__label">Mensaje</label>
+                <label for="contacto-mensaje" class="form-label formulario-contacto__label" data-i18n="contacto.form.mensaje">Mensaje</label>
                 <textarea class="form-control formulario-contacto__input formulario-contacto__textarea" id="contacto-mensaje" name="mensaje" rows="4" required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="submit" class="btn btn-primary" data-i18n="contacto.form.enviar">Enviar</button>
             </form>
-            <p class="formulario-contacto__ayuda mt-4 mb-0 small opacity-75">Directo: <a href="mailto:carlos.garcia.ra@outlook.com" class="formulario-contacto__link">carlos.garcia.ra@outlook.com</a></p>
+            <p class="formulario-contacto__ayuda mt-4 mb-0 small opacity-75"><span data-i18n="contacto.ayuda">Directo:</span> <a href="mailto:carlos.garcia.ra@outlook.com" class="formulario-contacto__link">carlos.garcia.ra@outlook.com</a></p>
           </div>
         </div>
       </div>
@@ -152,12 +157,13 @@
 
   <footer class="pie-sitio border-top border-secondary">
     <div class="container container--barra text-center small py-4">
-      <p class="mb-1 pie-sitio__texto">Carlos Adolfo García Ramos</p>
-      <p class="mb-0 pie-sitio__texto">© <span id="año"></span> · Hecho con HTML, Bootstrap y un poco de café</p>
+      <p class="mb-1 pie-sitio__texto" data-i18n="footer.nombre">Carlos Adolfo García Ramos</p>
+      <p class="mb-0 pie-sitio__texto"><span id="footer-credito"></span></p>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

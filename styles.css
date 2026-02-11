@@ -414,3 +414,40 @@ html {
 .paleta-barra__btn[data-theme="violeta"] { background: linear-gradient(135deg, #0c0a14 50%, #a78bfa 50%); }
 .paleta-barra__btn[data-theme="cian"] { background: linear-gradient(135deg, #0a0f14 50%, #22d3ee 50%); }
 .paleta-barra__btn[data-theme="rosa"] { background: linear-gradient(135deg, #0f0d13 50%, #ec4899 50%); }
+
+/* Cards de experiencia */
+.experiencia-card {
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.experiencia-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+}
+
+.experiencia-card h2 {
+  color: var(--text-primary);
+}
+
+.experiencia-card p {
+  color: var(--text-primary);
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Selector de idioma */
+.lang-selector {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.lang-selector:focus {
+  background-color: var(--bg-tertiary);
+  border-color: var(--accent);
+  color: var(--text-primary);
+  box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent) 30%, transparent);
+}

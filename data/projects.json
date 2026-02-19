@@ -2,7 +2,9 @@
   {
     "id": 1,
     "title": "Barri Card",
+    "titleEn": "Barri Card",
     "description": "Tarjeta de débito y billetera digital para Barri Money Services. Integración con APIs de Green Dot, app web (React.js), app móvil (React Native) y backend NestJS/.NET 9.",
+    "descriptionEn": "Debit card and digital wallet for Barri Money Services. Green Dot API integration, web app (React.js), mobile app (React Native) and NestJS/.NET 9 backend.",
     "type": "enterprise",
     "categories": ["web", "mobile"],
     "tags": ["React", "React Native", "NestJS", ".NET", "TypeScript", "MongoDB"],
@@ -14,7 +16,9 @@
   {
     "id": 2,
     "title": "Sistema ERP",
+    "titleEn": "ERP System",
     "description": "Desarrollo de módulo contable y reportes para gestión interna. Integración con APIs de terceros y panel de administración.",
+    "descriptionEn": "Accounting module and reports for internal management. Third-party API integration and admin panel.",
     "type": "enterprise",
     "categories": ["web"],
     "tags": ["PHP", "SQL", "Bootstrap", "JavaScript"],
@@ -26,7 +30,9 @@
   {
     "id": 3,
     "title": "App de tareas",
+    "titleEn": "Tasks App",
     "description": "Aplicación personal para gestión de tareas con sincronización en la nube y tema oscuro. Proyecto de práctica con stack moderno.",
+    "descriptionEn": "Personal task management app with cloud sync and dark theme. Side project with modern stack.",
     "type": "personal",
     "categories": ["web", "mobile"],
     "tags": ["Vue.js", "Firebase", "PWA"],
@@ -38,7 +44,9 @@
   {
     "id": 4,
     "title": "Clima móvil",
+    "titleEn": "Weather Mobile",
     "description": "App móvil para consultar el clima por ubicación. Consumo de API REST y caché local.",
+    "descriptionEn": "Mobile app to check weather by location. REST API consumption and local cache.",
     "type": "personal",
     "categories": ["mobile"],
     "tags": ["React Native", "TypeScript", "API REST"],

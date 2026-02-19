@@ -107,6 +107,11 @@
 
     // Actualizar atributo lang del HTML
     document.documentElement.setAttribute("lang", currentLang);
+
+    // Notificar a otros módulos (ej. proyectos) que el idioma cambió
+    try {
+      window.dispatchEvent(new CustomEvent("portfolio:langChange", { detail: { lang: currentLang } }));
+    } catch (e) {}
   }
 
   // Cambiar idioma

@@ -16,6 +16,18 @@
       : { verDemo: "Ver Demo", github: "GitHub", privadoNda: "Privado (NDA)" };
   }
 
+  /** Título y descripción del proyecto según idioma (soporta titleEn/descriptionEn en JSON). */
+  function getProjectText(p) {
+    var lang = getLang();
+    if (lang === "en" && (p.titleEn || p.descriptionEn)) {
+      return {
+        title: p.titleEn || p.title,
+        description: p.descriptionEn || p.description
+      };
+    }
+    return { title: p.title, description: p.description };
+  }
+
   /**
    * Simula una llamada a API: carga projects.json (fetch local).
    */
@@ -64,6 +76,7 @@
         var col = document.createElement("div");
         col.className = p.isFeatured ? "col project-card-col col-lg-8" : "col project-card-col";
 
+        var text = getProjectText(p);
         var isEnterprise = p.type === "enterprise";
         var badgeText = isEnterprise ? (getLang() === "en" ? "Enterprise" : "Empresa") : (getLang() === "en" ? "Personal" : "Personal");
         var badgeClass = isEnterprise ? "project-card__badge--enterprise" : "project-card__badge--personal";
@@ -95,9 +108,9 @@
           '    <span class="project-card__badge ' + badgeClass + '">' + escapeHtml(badgeText) + "</span>" +
           "  </div>" +
           '  <div class="project-card__body">' +
-          '    <h3 class="project-card__title">' + escapeHtml(p.title) + "</h3>" +
+          '    <h3 class="project-card__title">' + escapeHtml(text.title) + "</h3>" +
           '    <div class="project-card__tags">' + tagsHtml + "</div>" +
-          '    <p class="project-card__description">' + escapeHtml(p.description) + "</p>" +
+          '    <p class="project-card__description">' + escapeHtml(text.description) + "</p>" +
           '    <div class="project-card__actions">' + demoBtn + repoBtn + "</div>" +
           "  </div>" +
           "</article>";
@@ -141,6 +154,12 @@
       applyFilter();
     });
     initFilters();
+    window.addEventListener("portfolio:langChange", function () {
+      // Solo re-renderizar si ya tenemos proyectos cargados (evita mostrar "Contenido próximamente." al recargar)
+      if (allProjects.length > 0) {
+        applyFilter();
+      }
+    });
   }
 
   if (document.readyState === "loading") {

@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "proyectos": "Proyectos",
+    "experiencia": "Historial laboral"
+  },
+  "hero": {
+    "saludo": "Hola, soy Carlos",
+    "subtitulo": "Fullstack Developer",
+    "intro": "Más de cinco años como desarrollador fullstack: experiencia sólida en backend (APIs, servicios, bases de datos) y en frontend (interfaces web y móvil). Me gusta abordar el ciclo completo y resolver problemas de extremo a extremo.",
+    "btnContacto": "Contacto",
+    "btnProyectos": "Ver proyectos"
+  },
+  "tagline": {
+    "texto": "Construyo interfaces y aplicaciones que escalan, desde frontend hasta backend e infraestructura."
+  },
+  "servicios": {
+    "titulo": "Servicios",
+    "items": [
+      "Desarrollo frontend (Vue.js, React, React Native)",
+      "Desarrollo backend (NestJS, .NET, Google Cloud Functions)",
+      "Diseño e integración de APIs REST",
+      "Aplicaciones móviles (iOS y Android)",
+      "Bases de datos (PostgreSQL, MongoDB, Firestore)"
+    ]
+  },
+  "stack": {
+    "titulo": "Stack técnico",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "datos": "Datos y DevOps"
+  },
+  "trayectoria": {
+    "titulo": "Trayectoria",
+    "texto": "He trabajado en consultorías, startups y empresas de producto: desde frontend en Monoestereo y Agentus hasta fullstack en Daltum Systems y Bluepeople (módulo Wallet con React, React Native, NestJS y .NET).",
+    "btnProyectos": "Ver proyectos"
+  },
+  "contacto": {
+    "titulo": "Contacto",
+    "texto": "Disponible para contratación en empresa y para colaboración por proyecto. Si encaja con lo que buscas, escríbeme por el formulario de la derecha o al correo que aparece abajo.",
+    "form": {
+      "nombre": "Nombre",
+      "email": "Email",
+      "mensaje": "Mensaje",
+      "enviar": "Enviar"
+    },
+    "ayuda": "Directo:"
+  },
+  "experiencia": {
+    "titulo": "Historial laboral",
+    "remoto": "Remoto",
+    "actualidad": "Actualidad",
+    "monoestereo": {
+      "empresa": "Monoestereo",
+      "sobreEmpresa": "Agencia creativa: soluciones a la medida, desarrollo web y e-commerce, diseño y estrategias digitales B2B/B2C.",
+      "rol": "Desarrollador Frontend",
+      "fechaInicio": "10/2020",
+      "fechaFin": "07/2023",
+      "descripcion": "Agencia de desarrollo. Desarrollo FrontEnd en múltiples proyectos de Node principalmente usando Vuejs y React. Consumo de REST API's. Deploys a servidor. Apoyo en áreas del desarrollo backend."
+    },
+    "anaGPT": {
+      "empresa": "Agentus",
+      "sobreEmpresa": "Startup de IA: asistente virtual de ventas por WhatsApp, calificación de leads y flujos de conversión.",
+      "rol": "Desarrollador Fullstack",
+      "fechaInicio": "08/2023",
+      "fechaFin": "02/2024",
+      "descripcion": "Desarrollo Fullstack: frontend con Vue.js (diseño e implementación de la interfaz, integración con la API de GPT para flujos de gestión y seguimiento) y backend serverless con Google Cloud Functions en TypeScript (Firebase, Firestore, Storage). Responsable del ciclo completo de la aplicación."
+    },
+    "daltum": {
+      "empresa": "Daltum Systems",
+      "sobreEmpresa": "Proveedor de tecnología y software: desarrollo a la medida, aplicaciones, staffing en TI e infraestructura en la nube (BaaS, IaaS).",
+      "rol": "Desarrollador Fullstack",
+      "fechaInicio": "02/2024",
+      "fechaFin": "01/2026",
+      "descripcion": "Desarrollo Fullstack en proyectos de Node.js y .NET. Integración y desarrollo de múltiples API REST para proyectos como la generación de guías de envío, una plataforma de administración para recursos humanos, un sistema de evaluación de empleados y proyectos de gobierno de datos catastrales. Uso de servicios de Azure. Implementación de CI/CD. Administración y mantenimiento de servidores Linux: despliegue de aplicaciones, diagnóstico de problemas, configuración de entornos y gestión de infraestructura."
+    },
+    "bluepeople": {
+      "empresa": "Bluepeople – Dolfintech",
+      "sobreEmpresa": "Consultora de tecnología; asignación en Dolfintech (Barri Money Transfer: servicios financieros, remesas y tarjeta de débito).",
+      "empresaDetalle": "Barri Money Transfer",
+      "proyectoNombre": "Barri Card — tarjeta y billetera digital",
+      "rol": "Desarrollador Fullstack",
+      "fechaInicio": "02/2026",
+      "fechaFin": "Actualidad",
+      "descripcion": "Desarrollo Fullstack del producto de tarjeta y billetera digital (Barri Card): integración con APIs de Green Dot, frontend web con React.js, app móvil con React Native, y backend con NestJS y .NET 9 (APIs REST, lógica de negocio, persistencia). Bases de datos SQL y MongoDB. Participación en diseño, implementación y mantenimiento de los flujos de la wallet y de la cuenta Barri en el ecosistema Barri Money Services."
+    }
+  },
+  "cv": {
+    "descargar": "Descargar CV"
+  },
+  "footer": {
+    "nombre": "Carlos Adolfo García Ramos",
+    "credito": "© {año} · Hecho con HTML, Bootstrap, Cursor y un poco de café"
+  },
+  "proyectos": {
+    "titulo": "Proyectos",
+    "proximamente": "Contenido próximamente.",
+    "filtroTodos": "Todos",
+    "filtroEmpresa": "Empresa",
+    "filtroPersonal": "Personal",
+    "filtroWeb": "Web",
+    "filtroMobile": "Mobile",
+    "verDemo": "Ver Demo",
+    "github": "GitHub",
+    "privadoNda": "Privado (NDA)"
+  }
+}

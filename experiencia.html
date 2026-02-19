@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial laboral — Carlos García</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="tema-oscuro" data-bs-theme="dark" data-theme="violeta">
+  <header class="barra-superior">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container container--barra">
+        <a class="navbar-brand fw-semibold" href="index.html">flwry.dev</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal" aria-controls="navPrincipal" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html#inicio" data-i18n="nav.inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="proyectos.html" data-i18n="nav.proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="experiencia.html" data-i18n="nav.experiencia">Historial laboral</a></li>
+          </ul>
+          <select class="form-select form-select-sm lang-selector ms-3" style="width: auto; max-width: 100px;" aria-label="Idioma">
+            <option value="es">🇲🇽 ES</option>
+            <option value="en">🇺🇸 EN</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container container--barra py-5">
+    <section class="py-5 mt-4">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="bloque__titulo-seccion fs-2 fw-bold mb-0" data-i18n="experiencia.titulo">Historial laboral</h1>
+        <a href="assets/Carlos García - CV.pdf" id="cv-download-link-experiencia" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer" data-i18n="cv.descargar">Descargar CV</a>
+      </div>
+
+      <!-- Monoestereo -->
+      <article class="experiencia-card card border-0 mb-4 p-4">
+        <div class="d-flex flex-wrap align-items-baseline gap-2 mb-1">
+          <h2 class="fs-4 fw-semibold mb-0" data-i18n="experiencia.monoestereo.empresa">Monoestereo</h2>
+          <span class="text-muted">—</span>
+          <span class="fs-5" data-i18n="experiencia.monoestereo.rol">Desarrollador Frontend</span>
+        </div>
+        <p class="small text-muted mb-2" data-i18n="experiencia.monoestereo.sobreEmpresa">Agencia creativa: soluciones a la medida, desarrollo web y e-commerce, diseño y estrategias digitales B2B/B2C.</p>
+        <div class="mb-3">
+          <span class="small text-muted">
+            <span data-i18n="experiencia.monoestereo.fechaInicio">10/2020</span> — <span data-i18n="experiencia.monoestereo.fechaFin">07/2023</span>
+          </span>
+          <span class="small text-muted ms-3">
+            <i class="fas fa-map-marker-alt me-1"></i><span data-i18n="experiencia.remoto">Remoto</span>
+          </span>
+        </div>
+        <p class="mb-0" data-i18n="experiencia.monoestereo.descripcion">Desarrollo FrontEnd en múltiples proyectos de Node principalmente usando Vuejs y React. Consumo de REST API's. Deploys a servidor. Apoyo en áreas del desarrollo backend.</p>
+      </article>
+
+      <!-- Agentus -->
+      <article class="experiencia-card card border-0 mb-4 p-4">
+        <div class="d-flex flex-wrap align-items-baseline gap-2 mb-1">
+          <h2 class="fs-4 fw-semibold mb-0" data-i18n="experiencia.anaGPT.empresa">Agentus</h2>
+          <span class="text-muted">—</span>
+          <span class="fs-5" data-i18n="experiencia.anaGPT.rol">Desarrollador Fullstack</span>
+        </div>
+        <p class="small text-muted mb-2" data-i18n="experiencia.anaGPT.sobreEmpresa">Startup de IA: asistente virtual de ventas por WhatsApp, calificación de leads y flujos de conversión.</p>
+        <div class="mb-3">
+          <span class="small text-muted">
+            <span data-i18n="experiencia.anaGPT.fechaInicio">08/2023</span> — <span data-i18n="experiencia.anaGPT.fechaFin">02/2024</span>
+          </span>
+          <span class="small text-muted ms-3">
+            <i class="fas fa-map-marker-alt me-1"></i><span data-i18n="experiencia.remoto">Remoto</span>
+          </span>
+        </div>
+        <p class="mb-0" data-i18n="experiencia.anaGPT.descripcion">Desarrollo Fullstack: frontend con Vue.js (diseño e implementación de la interfaz, integración con la API de GPT para flujos de gestión y seguimiento) y backend serverless con Google Cloud Functions en TypeScript (Firebase, Firestore, Storage). Responsable del ciclo completo de la aplicación.</p>
+      </article>
+
+      <!-- Daltum Systems -->
+      <article class="experiencia-card card border-0 mb-4 p-4">
+        <div class="d-flex flex-wrap align-items-baseline gap-2 mb-1">
+          <h2 class="fs-4 fw-semibold mb-0" data-i18n="experiencia.daltum.empresa">Daltum Systems</h2>
+          <span class="text-muted">—</span>
+          <span class="fs-5" data-i18n="experiencia.daltum.rol">Desarrollador Fullstack</span>
+        </div>
+        <p class="small text-muted mb-2" data-i18n="experiencia.daltum.sobreEmpresa">Proveedor de tecnología y software: desarrollo a la medida, aplicaciones, staffing en TI e infraestructura en la nube (BaaS, IaaS).</p>
+        <div class="mb-3">
+          <span class="small text-muted">
+            <span data-i18n="experiencia.daltum.fechaInicio">02/2024</span> — <span data-i18n="experiencia.daltum.fechaFin">01/2026</span>
+          </span>
+          <span class="small text-muted ms-3">
+            <i class="fas fa-map-marker-alt me-1"></i><span data-i18n="experiencia.remoto">Remoto</span>
+          </span>
+        </div>
+        <p class="mb-0" data-i18n="experiencia.daltum.descripcion">Desarrollo Fullstack en proyectos de Node.js y .NET. Integración y desarrollo de múltiples API REST para proyectos como la generación de guías de envío, una plataforma de administración para recursos humanos, un sistema de evaluación de empleados y proyectos de gobierno de datos catastrales. Uso de servicios de Azure. Implementación de CI/CD. Administración y mantenimiento de servidores Linux: despliegue de aplicaciones, diagnóstico de problemas, configuración de entornos y gestión de infraestructura.</p>
+      </article>
+
+      <!-- Bluepeople - Dolfintech -->
+      <article class="experiencia-card card border-0 mb-4 p-4">
+        <div class="d-flex flex-wrap align-items-baseline gap-2 mb-1">
+          <h2 class="fs-4 fw-semibold mb-0" data-i18n="experiencia.bluepeople.empresa">Bluepeople – Dolfintech</h2>
+          <span class="text-muted">—</span>
+          <span class="fs-5" data-i18n="experiencia.bluepeople.rol">Desarrollador Fullstack</span>
+        </div>
+        <p class="small text-muted mb-1" data-i18n="experiencia.bluepeople.sobreEmpresa">Consultora de tecnología; asignación en Dolfintech (Barri Money Transfer: servicios financieros, remesas y tarjeta de débito).</p>
+        <div class="mb-2">
+          <p class="small text-muted mb-1">
+            <span data-i18n="experiencia.bluepeople.empresaDetalle">Barri Money Transfer</span>
+            · <a href="https://www.barri.com/BarriAccount/" target="_blank" rel="noopener noreferrer" class="experiencia-card__link" data-i18n="experiencia.bluepeople.proyectoNombre">Barri Card — tarjeta y billetera digital</a>
+          </p>
+        </div>
+        <div class="mb-3">
+          <span class="small text-muted">
+            <span data-i18n="experiencia.bluepeople.fechaInicio">02/2026</span> — <span data-i18n="experiencia.actualidad">Actualidad</span>
+          </span>
+          <span class="small text-muted ms-3">
+            <i class="fas fa-map-marker-alt me-1"></i><span data-i18n="experiencia.remoto">Remoto</span>
+          </span>
+        </div>
+        <p class="mb-0" data-i18n="experiencia.bluepeople.descripcion">Desarrollo Fullstack del producto de tarjeta y billetera digital (Barri Card): integración con APIs de Green Dot, frontend web con React.js, app móvil con React Native, y backend con NestJS y .NET 9 (APIs REST, lógica de negocio, persistencia). Bases de datos SQL y MongoDB. Participación en diseño, implementación y mantenimiento de los flujos de la wallet y de la cuenta Barri en el ecosistema Barri Money Services.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="pie-sitio border-top border-secondary">
+    <div class="container container--barra text-center small py-4">
+      <p class="mb-1 pie-sitio__texto" data-i18n="footer.nombre">Carlos Adolfo García Ramos</p>
+      <p class="mb-0 pie-sitio__texto"><span id="footer-credito"></span></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f7064e2e70.js" crossorigin="anonymous"></script>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

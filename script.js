@@ -1,10 +1,6 @@
 (function () {
   var STORAGE_THEME = "portfolio-theme";
-  var DEFAULT_THEME = "navy";
-
-  // Año en el footer
-  var añoEl = document.getElementById("año");
-  if (añoEl) añoEl.textContent = new Date().getFullYear();
+  var DEFAULT_THEME = "violeta";
 
   // Aplicar tema guardado al cargar
   function aplicarTema(id) {

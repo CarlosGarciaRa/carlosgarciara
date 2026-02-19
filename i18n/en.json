@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "proyectos": "Projects",
+    "experiencia": "Work history"
+  },
+  "hero": {
+    "saludo": "Hi, I'm Carlos",
+    "subtitulo": "Fullstack Developer",
+    "intro": "Over five years as a fullstack developer: solid experience in backend (APIs, services, databases) and frontend (web and mobile interfaces). I enjoy tackling the full cycle and solving end-to-end problems.",
+    "btnContacto": "Contact",
+    "btnProyectos": "View projects"
+  },
+  "tagline": {
+    "texto": "I build interfaces and applications that scale, from frontend to backend and infrastructure."
+  },
+  "servicios": {
+    "titulo": "Services",
+    "items": [
+      "Frontend development (Vue.js, React, React Native)",
+      "Backend development (NestJS, .NET, Google Cloud Functions)",
+      "REST API design and integration",
+      "Mobile applications (iOS and Android)",
+      "Databases (PostgreSQL, MongoDB, Firestore)"
+    ]
+  },
+  "stack": {
+    "titulo": "Tech Stack",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "datos": "Data & DevOps"
+  },
+  "trayectoria": {
+    "titulo": "Background",
+    "texto": "I've worked at consultancies, startups, and product companies: from frontend at Monoestereo and Agentus to fullstack at Daltum Systems and Bluepeople (Wallet module with React, React Native, NestJS, and .NET).",
+    "btnProyectos": "View projects"
+  },
+  "contacto": {
+    "titulo": "Contact",
+    "texto": "Available for company hiring and project collaboration. If it aligns with what you're looking for, reach out via the form on the right or the email below.",
+    "form": {
+      "nombre": "Name",
+      "email": "Email",
+      "mensaje": "Message",
+      "enviar": "Send"
+    },
+    "ayuda": "Direct:"
+  },
+  "experiencia": {
+    "titulo": "Work history",
+    "remoto": "Remote",
+    "actualidad": "Present",
+    "monoestereo": {
+      "empresa": "Monoestereo",
+      "sobreEmpresa": "Creative agency: custom solutions, web and e-commerce development, design and B2B/B2C digital strategies.",
+      "rol": "Frontend Developer",
+      "fechaInicio": "10/2020",
+      "fechaFin": "07/2023",
+      "descripcion": "Development agency. Frontend development in multiple Node projects primarily using Vue.js and React. REST API consumption. Server deployments. Support in backend development areas."
+    },
+    "anaGPT": {
+      "empresa": "Agentus",
+      "sobreEmpresa": "AI startup: sales assistant via WhatsApp, lead scoring and conversion flows.",
+      "rol": "Fullstack Developer",
+      "fechaInicio": "08/2023",
+      "fechaFin": "02/2024",
+      "descripcion": "Fullstack development: frontend with Vue.js (interface design and implementation, GPT API integration for management and tracking flows) and serverless backend with Google Cloud Functions in TypeScript (Firebase, Firestore, Storage). Responsible for the complete application lifecycle."
+    },
+    "daltum": {
+      "empresa": "Daltum Systems",
+      "sobreEmpresa": "Technology and software provider: custom development, applications, IT staffing and cloud infrastructure (BaaS, IaaS).",
+      "rol": "Fullstack Developer",
+      "fechaInicio": "02/2024",
+      "fechaFin": "01/2026",
+      "descripcion": "Fullstack development in Node.js and .NET projects. Integration and development of multiple REST APIs for projects such as shipping label generation, a human resources administration platform, an employee evaluation system, and cadastral data governance projects. Azure services usage. CI/CD implementation. Linux server administration and maintenance: application deployment, troubleshooting, environment configuration, and infrastructure management."
+    },
+    "bluepeople": {
+      "empresa": "Bluepeople – Dolfintech",
+      "sobreEmpresa": "Technology consultancy; assignment at Dolfintech (Barri Money Transfer: financial services, remittances, and debit card).",
+      "empresaDetalle": "Barri Money Transfer",
+      "proyectoNombre": "Barri Card — digital card & wallet",
+      "rol": "Fullstack Developer",
+      "fechaInicio": "02/2026",
+      "fechaFin": "Present",
+      "descripcion": "Fullstack development of the digital card and wallet product (Barri Card): integration with Green Dot APIs, web frontend with React.js, mobile app with React Native, and backend with NestJS and .NET 9 (REST APIs, business logic, persistence). SQL and MongoDB databases. Participation in design, implementation, and maintenance of wallet and Barri account flows within the Barri Money Services ecosystem."
+    }
+  },
+  "cv": {
+    "descargar": "Download Resume"
+  },
+  "footer": {
+    "nombre": "Carlos Adolfo García Ramos",
+    "credito": "© {año} · Made with HTML, Bootstrap, Cursor and a bit of coffee"
+  },
+  "proyectos": {
+    "titulo": "Projects",
+    "proximamente": "Content coming soon.",
+    "filtroTodos": "All",
+    "filtroEmpresa": "Enterprise",
+    "filtroPersonal": "Personal",
+    "filtroWeb": "Web",
+    "filtroMobile": "Mobile",
+    "verDemo": "View Demo",
+    "github": "GitHub",
+    "privadoNda": "Private (NDA)"
+  }
+}

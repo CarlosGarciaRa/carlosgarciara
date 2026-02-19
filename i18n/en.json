@@ -32,7 +32,7 @@
   },
   "trayectoria": {
     "titulo": "Background",
-    "texto": "I've worked at consultancies, startups, and product companies: from frontend at Monoestereo and Ana GPT to fullstack at Daltum Systems and Bluepeople (Wallet module with React, React Native, NestJS, and .NET).",
+    "texto": "I've worked at consultancies, startups, and product companies: from frontend at Monoestereo and Agentus to fullstack at Daltum Systems and Bluepeople (Wallet module with React, React Native, NestJS, and .NET).",
     "btnProyectos": "View projects"
   },
   "contacto": {
@@ -59,7 +59,7 @@
       "descripcion": "Development agency. Frontend development in multiple Node projects primarily using Vue.js and React. REST API consumption. Server deployments. Support in backend development areas."
     },
     "anaGPT": {
-      "empresa": "Ana GPT",
+      "empresa": "Agentus",
       "sobreEmpresa": "AI startup: sales assistant via WhatsApp, lead scoring and conversion flows.",
       "rol": "Fullstack Developer",
       "fechaInicio": "08/2023",
@@ -85,12 +85,23 @@
       "descripcion": "Fullstack development of the digital card and wallet product (Barri Card): integration with Green Dot APIs, web frontend with React.js, mobile app with React Native, and backend with NestJS and .NET 9 (REST APIs, business logic, persistence). SQL and MongoDB databases. Participation in design, implementation, and maintenance of wallet and Barri account flows within the Barri Money Services ecosystem."
     }
   },
+  "cv": {
+    "descargar": "Download Resume"
+  },
   "footer": {
     "nombre": "Carlos Adolfo García Ramos",
-    "credito": "© {año} · Made with HTML, Bootstrap and a bit of coffee"
+    "credito": "© {año} · Made with HTML, Bootstrap, Cursor and a bit of coffee"
   },
   "proyectos": {
     "titulo": "Projects",
-    "proximamente": "Content coming soon."
+    "proximamente": "Content coming soon.",
+    "filtroTodos": "All",
+    "filtroEmpresa": "Enterprise",
+    "filtroPersonal": "Personal",
+    "filtroWeb": "Web",
+    "filtroMobile": "Mobile",
+    "verDemo": "View Demo",
+    "github": "GitHub",
+    "privadoNda": "Private (NDA)"
   }
 }

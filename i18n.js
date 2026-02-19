@@ -76,6 +76,15 @@
       }
     }
 
+    // Actualizar enlaces de descarga de CV según idioma
+    var cvLinks = document.querySelectorAll("#cv-download-link, #cv-download-link-experiencia");
+    cvLinks.forEach(function (link) {
+      var cvPath = currentLang === "en" 
+        ? "assets/Carlos García - CV_E.pdf"
+        : "assets/Carlos García - CV.pdf";
+      link.setAttribute("href", cvPath);
+    });
+
     // Manejar arrays (ej: lista de servicios)
     var arrayElements = document.querySelectorAll("[data-i18n-array]");
     arrayElements.forEach(function (container) {

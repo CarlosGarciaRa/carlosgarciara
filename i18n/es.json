@@ -75,13 +75,14 @@
       "descripcion": "Desarrollo Fullstack en proyectos de Node.js y .NET. Integración y desarrollo de múltiples API REST para proyectos como la generación de guías de envío, una plataforma de administración para recursos humanos, un sistema de evaluación de empleados y proyectos de gobierno de datos catastrales. Uso de servicios de Azure. Implementación de CI/CD. Administración y mantenimiento de servidores Linux: despliegue de aplicaciones, diagnóstico de problemas, configuración de entornos y gestión de infraestructura."
     },
     "bluepeople": {
-      "empresa": "Bluepeople",
-      "sobreEmpresa": "Consultora de tecnología con software de gestión de proyectos; asignación en Dolfintech (Barri Money Transfer, servicios financieros y remesas).",
-      "empresaDetalle": "Dolfintech · Barri Money Transfer",
+      "empresa": "Bluepeople – Dolfintech",
+      "sobreEmpresa": "Consultora de tecnología; asignación en Dolfintech (Barri Money Transfer: servicios financieros, remesas y tarjeta de débito).",
+      "empresaDetalle": "Barri Money Transfer",
+      "proyectoNombre": "Barri Card — tarjeta y billetera digital",
       "rol": "Desarrollador Fullstack",
       "fechaInicio": "02/2026",
       "fechaFin": "Actualidad",
-      "descripcion": "Desarrollo Fullstack del módulo de Wallet: integración con APIs de Green Dot para funcionalidad de billetera digital, desarrollo de frontend web con React.js y aplicación móvil con React Native, y backend con NestJS y .NET 9 (APIs REST, lógica de negocio, persistencia). Uso de bases de datos SQL y MongoDB. Participación en diseño, implementación y mantenimiento de los flujos de la wallet dentro del ecosistema."
+      "descripcion": "Desarrollo Fullstack del producto de tarjeta y billetera digital (Barri Card): integración con APIs de Green Dot, frontend web con React.js, app móvil con React Native, y backend con NestJS y .NET 9 (APIs REST, lógica de negocio, persistencia). Bases de datos SQL y MongoDB. Participación en diseño, implementación y mantenimiento de los flujos de la wallet y de la cuenta Barri en el ecosistema Barri Money Services."
     }
   },
   "footer": {

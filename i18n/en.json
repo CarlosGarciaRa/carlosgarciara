@@ -75,13 +75,14 @@
       "descripcion": "Fullstack development in Node.js and .NET projects. Integration and development of multiple REST APIs for projects such as shipping label generation, a human resources administration platform, an employee evaluation system, and cadastral data governance projects. Azure services usage. CI/CD implementation. Linux server administration and maintenance: application deployment, troubleshooting, environment configuration, and infrastructure management."
     },
     "bluepeople": {
-      "empresa": "Bluepeople",
-      "sobreEmpresa": "Technology consultancy with project management software; assignment at Dolfintech (Barri Money Transfer, financial services and remittances).",
-      "empresaDetalle": "Dolfintech · Barri Money Transfer",
+      "empresa": "Bluepeople – Dolfintech",
+      "sobreEmpresa": "Technology consultancy; assignment at Dolfintech (Barri Money Transfer: financial services, remittances, and debit card).",
+      "empresaDetalle": "Barri Money Transfer",
+      "proyectoNombre": "Barri Card — digital card & wallet",
       "rol": "Fullstack Developer",
       "fechaInicio": "02/2026",
       "fechaFin": "Present",
-      "descripcion": "Fullstack development of the Wallet module: integration with Green Dot APIs for digital wallet functionality, web frontend development with React.js and mobile application with React Native, and backend with NestJS and .NET 9 (REST APIs, business logic, persistence). SQL and MongoDB database usage. Participation in design, implementation, and maintenance of wallet flows within the ecosystem."
+      "descripcion": "Fullstack development of the digital card and wallet product (Barri Card): integration with Green Dot APIs, web frontend with React.js, mobile app with React Native, and backend with NestJS and .NET 9 (REST APIs, business logic, persistence). SQL and MongoDB databases. Participation in design, implementation, and maintenance of wallet and Barri account flows within the Barri Money Services ecosystem."
     }
   },
   "footer": {

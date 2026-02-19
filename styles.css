@@ -74,6 +74,16 @@
   --border: #3f3a4a;
 }
 
+[data-theme="obsidian-gold"] {
+  --bg-primary: #0e0f10;
+  --bg-secondary: #282c3c;
+  --bg-tertiary: #353a4d;
+  --text-primary: #e8e6dd;
+  --accent: #e0a61a;
+  --accent-hover: #f0b82e;
+  --border: #3d4152;
+}
+
 /* Fallback si no hay data-theme (usa navy) */
 body:not([data-theme]) {
   --bg-primary: #0a1128;
@@ -414,6 +424,7 @@ html {
 .paleta-barra__btn[data-theme="violeta"] { background: linear-gradient(135deg, #0c0a14 50%, #a78bfa 50%); }
 .paleta-barra__btn[data-theme="cian"] { background: linear-gradient(135deg, #0a0f14 50%, #22d3ee 50%); }
 .paleta-barra__btn[data-theme="rosa"] { background: linear-gradient(135deg, #0f0d13 50%, #ec4899 50%); }
+.paleta-barra__btn[data-theme="obsidian-gold"] { background: linear-gradient(135deg, #282c3c 50%, #e0a61a 50%); }
 
 /* Cards de experiencia */
 .experiencia-card {
@@ -436,6 +447,16 @@ html {
   color: var(--text-primary);
   opacity: 0.9;
   line-height: 1.6;
+}
+
+.experiencia-card__link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.experiencia-card__link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
 }
 
 /* Selector de idioma */
